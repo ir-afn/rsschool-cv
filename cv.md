@@ -2,9 +2,7 @@
 contact: @irr2irr (Telegram)
 
 ### About me
-I want to become a frontend developer. 
-
-Currently working as a content manager. 
+I want to become a frontend developer. Currently working as a content manager. 
 
 My strong points:
 * attention to detail
@@ -12,7 +10,7 @@ My strong points:
 * friendliness
 
 ### My skills
-Currently learning HTML, CSS and JS.
+I am learning HTML, CSS and JS.
 
 Some of my code:
 ```
@@ -34,5 +32,8 @@ const isBracketStructureBalanced = (string) => {
   return stack.length === 0;
 };
 ```
+### Education
+I majored in the English language; I passed the CAE test, have travelled and practiced abroad.
 
+I took online courses on HTML, CSS and JS from Netology, HTML Academy and Hexlet.
 
