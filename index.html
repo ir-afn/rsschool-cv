@@ -21,7 +21,7 @@
         <section class="about-block">
             <h2 class="heading">About me</h2>
             <p class="about__text">
-                I want to become a frontend developer. Currently working as a content manager.
+                I am studying to become a frontend developer. Currently working as a content manager.
             </p>
             <p class="about__details">My strong points:</p>
             <ul class="about__list">
@@ -36,30 +36,30 @@
             <p class="about__text">Some of my code:</p>
             <pre class="skills__code-fragment">
                 <code>
-                    const isBracketStructureBalanced = (string) => {
-                        const stack = [];
-                        let openingIndex;
-                        let closingIndex;
-                        for (const item of string) {
-                            if (openingSymbols.includes(item)) {
-                                stack.push(item);
-                            } else if (closingSymbols.includes(item)) {
-                                closingIndex = closingSymbols.indexOf(item);
-                                openingIndex = openingSymbols.indexOf(stack.pop());
-                                if (openingIndex !== closingIndex) {
-                                    return false;
-                                }
-                            }
-                        }
-                        return stack.length === 0;
-                    };
+    const isBracketStructureBalanced = (string) => {
+        const stack = [];
+        let openingIndex;
+        let closingIndex;
+        for (const item of string) {
+            if (openingSymbols.includes(item)) {
+                stack.push(item);
+            } else if (closingSymbols.includes(item)) {
+                closingIndex = closingSymbols.indexOf(item);
+                openingIndex = openingSymbols.indexOf(stack.pop());
+                if (openingIndex !== closingIndex) {
+                    return false;
+                }
+            }
+        }
+        return stack.length === 0;
+    };                    
                 </code>
             </pre>            
         </section>
         <section class="education-block">
             <h2 class="heading">Education</h2>
             <p class="about__text">
-                I majored in the English language; I passed the CAE test, have travelled and practiced abroad.
+                I majored in the English language, passed the CAE test, travelled and practiced abroad.
             </p>
             <p class="about__text">
                 I took online courses on HTML, CSS and JS from Netology, HTML Academy and Hexlet.
@@ -77,7 +77,7 @@
 
         <p class="about__text">
             Irina Afonina<br>
-            2021
+            <time>2021</time>
         </p>
     </footer>
 </body>
