@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irina Afonina | CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:wght@300;400;800&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="main-wrapper">
+    <header class="header">
+        <div class="header-text-wrapper">
+            <h1 class="header__name">Irina Afonina</h1>
+            <address class="header__contact">contact: @irr2irr (Telegram)</address>
+        </div>
+        <img src="images/profile-pic.jpg" alt="Irina" class="header__photo">
+    </header>
+    <main class="about">
+        <section class="about-block">
+            <h2 class="heading">About me</h2>
+            <p class="about__text">
+                I want to become a frontend developer. Currently working as a content manager.
+            </p>
+            <p class="about__details">My strong points:</p>
+            <ul class="about__list">
+                <li class="about__list__item">attention to detail</li>
+                <li class="about__list__item">English (C2)</li>
+                <li class="about__list__item">perseverance</li>
+            </ul>
+        </section>
+        <section class="skills-block">
+            <h2 class="heading">My skills</h2>
+            <p class="about__text">I am learning HTML, CSS and JS.</p>
+            <p class="about__text">Some of my code:</p>
+            <pre class="skills__code-fragment">
+                <code>
+                    const isBracketStructureBalanced = (string) => {
+                        const stack = [];
+                        let openingIndex;
+                        let closingIndex;
+                        for (const item of string) {
+                            if (openingSymbols.includes(item)) {
+                                stack.push(item);
+                            } else if (closingSymbols.includes(item)) {
+                                closingIndex = closingSymbols.indexOf(item);
+                                openingIndex = openingSymbols.indexOf(stack.pop());
+                                if (openingIndex !== closingIndex) {
+                                    return false;
+                                }
+                            }
+                        }
+                        return stack.length === 0;
+                    };
+                </code>
+            </pre>            
+        </section>
+        <section class="education-block">
+            <h2 class="heading">Education</h2>
+            <p class="about__text">
+                I majored in the English language; I passed the CAE test, have travelled and practiced abroad.
+            </p>
+            <p class="about__text">
+                I took online courses on HTML, CSS and JS from Netology, HTML Academy and Hexlet.
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="division"></div>
+        <a href="https://github.com/ir-afn" class="socials__link" target="blank">
+            <img src="images/GitHub_Logo.png" alt="GitHub logo" class="socials__link__git">
+        </a>
+        <a href="https://rs.school/js/" class="socials__link" target="blank">
+            <img src="images/rs_school_js.svg" alt="RSS logo" class="socials__link__rss">
+        </a>
+
+        <p class="about__text">
+            Irina Afonina<br>
+            2021
+        </p>
+    </footer>
+</body>
+</html>
